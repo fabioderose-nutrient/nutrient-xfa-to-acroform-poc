@@ -35,7 +35,7 @@ public static class XfaPacketReader
         foreach (var x in xml)
         {
             if (packets.Template == null && x.Contains("xfa-template")) packets.Template = x;
-            if (packets.Datasets == null && x.Contains("datasets")) packets.Datasets = x;
+            if (packets.Datasets == null && x.Contains("<xfa:datasets")) packets.Datasets = x;
         }
         // A single packet can hold the whole XDP document.
         if (packets.Template == null)

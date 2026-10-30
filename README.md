@@ -42,7 +42,7 @@ Everything runs locally. No cloud service is called.
 - XFA scripts (JavaScript and FormCalc) are not converted.
 - Repeating subforms and tables that grow with data are laid out once.
 - Fields on master pages (`pageArea`) are not converted.
-- Long forms with flowing, conditional sections are laid out approximately. When the exact look matters, print the form to PDF from an XFA viewer and pass it with `--background`: the fields are then added on top of that rendering.
+- Long forms with flowing, conditional sections are laid out approximately: on dense pages, text can overlap or run past the page edge. When the exact look matters, print the form to PDF from an XFA viewer and pass it with `--background`: the fields are then added on top of that rendering.
 
 ## Prerequisites
 
